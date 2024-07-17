@@ -1,0 +1,211 @@
+/* backToTop */
+.back-to-top {
+  width: 100%;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  display: flex;
+  justify-content: center;
+  background-color: #37475a;
+  color: #ffffff;
+  text-decoration: none;
+}
+.back-to-top:hover {
+  background-color: #37475af2;
+  cursor: pointer;
+}
+/* footer */
+.footer-first-section {
+  background-color: #232f3e;
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+.footer-first-section span {
+  width: 14%;
+  display: flex;
+  flex-direction: column;
+}
+.footer-first-section span p {
+  margin-bottom: 15px;
+  font-size: medium;
+  color: #ffffff;
+  font-weight: bold;
+}
+.footer-first-section span div {
+  margin-bottom: 10px;
+}
+.footer-first-section span a {
+  margin-bottom: 10px;
+  font-size: medium;
+  color: #d1dddd;
+  text-decoration: none;
+}
+.footer-first-section span a:hover {
+  text-decoration: underline;
+}
+.footer-second-section {
+  border-top: solid #3a4553 1px;
+  background-color: #232f3e;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 20%;
+  padding-right: 20%;
+}
+.footer-second-section a {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+.footer-second-section img {
+  width: 20%;
+  height: 40px;
+}
+.footer-second-section span {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.footer-second-section span a {
+  font-size: small;
+  color: #d1dddd;
+  text-decoration: none;
+}
+.footer-second-section span a:hover {
+  text-decoration: underline;
+}
+.footer-third-section {
+  background-color: #131a22;
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+.footer-third-section span {
+  width: 12%;
+  display: flex;
+  flex-direction: column;
+}
+.footer-third-section span a {
+  margin-bottom: 18px;
+  font-size: small;
+  color: #999999;
+  text-decoration: none;
+}
+.footer-third-section span a:hover {
+  font-size: small;
+  color: #d1dddd;
+  text-decoration: underline;
+}
+.footer-third-section span a :first-child {
+  font-weight: bold;
+  font-size: small;
+  color: #d1dddd;
+}
+.footer-fourth-section {
+  background-color: #131a22;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+.footer-fourth-section span {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+  flex-wrap: wrap;
+}
+.footer-fourth-section span div {
+  text-wrap: nowrap;
+  margin-right: 2%;
+}
+.footer-fourth-section span a {
+  font-size: small;
+  color: #d1dddd;
+  text-decoration: none;
+}
+.footer-fourth-section span a:hover {
+  text-decoration: underline;
+}
+.footer-fourth-section p {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  color: #d1dddd;
+  font-size: small;
+  padding-left: 20%;
+  padding-right: 20%;
+}
+/* for mobile */
+.footer-first-mobile-section {
+  display: none;
+}
+.footer-third-mobile-section {
+  display: none;
+}
+@media (max-width: 991px) {
+  /* for mobile only elements*/
+  .footer-first-mobile-section {
+    background-color: #232f3e;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+  .footer-first-mobile-section span {
+    width: 35%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .footer-first-mobile-section span p {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+    font-size: medium;
+    color: #ffffff;
+  }
+  .footer-first-mobile-section span p:hover {
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  .footer-third-mobile-section {
+    background-color: #131a22;
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    color: #ffffff;
+  }
+  .footer-third-mobile-section p {
+    margin-right: 1%;
+  }
+  .footer-third-mobile-section a {
+    text-decoration: none;
+    color: #ffffff;
+  }
+  .footer-third-mobile-section a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  /* restyle pc elements */
+  .footer-first-section,
+  .footer-second-section,
+  .footer-third-section {
+    display: none;
+  }
+}

@@ -1,0 +1,77 @@
+
+
+.step-item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 10%;/* 9rem */
+}
+
+.step-item:not(:first-child)::before {
+  content: '';
+  background-color: #cbd5e0;
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  right: 50%;
+  top: 33%;
+  transform: translateY(-50%);
+}
+
+.step {
+  width: 2.5rem;
+  height: 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+  position: relative;
+  background-color: #232f3e; /* Dark color for step */
+  border-radius: 9999px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.stepParag {
+  color: #717e8a; /* Adjusted text color for step */
+}
+
+.active {
+  background-color: #48bb78; /* Amazon's primary color */
+}
+.active + .stepParag {
+  color:  #48bb78; /* Amazon's primary color */
+}
+
+.complete {
+  background-color: #48bb78;
+}
+
+.complete + .stepParag {
+  color: #48bb78;
+}
+
+.completeParent:not(:first-child)::before,
+.activeParent:not(:first-child)::before {
+  background-color: #48bb78;
+}
+.stepperContainer {
+  direction: ltr;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+@media (max-width: 991px) {
+  .step-item {
+    width: 90%;/* 9rem */
+  }
+}
+@media (max-width: 280px) {
+  .stepperContainer{
+    display: none;
+  }
+}

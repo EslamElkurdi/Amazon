@@ -1,0 +1,166 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+*::after,*::after{
+  margin: 0px;
+  padding: 0px;
+}
+/* orders */
+.theOrder{
+  width: 100%;
+  border: 1px solid #ccc ;
+  border-radius: 15px;
+  margin-bottom: 20px;
+}
+.theOrder>*{
+  padding: 16px;
+}
+.orderFirstSection{
+  background-color: #f0f0f0;
+  display: flex;
+  width: 100%;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border-bottom: 1px solid #ccc;
+}
+.orderFirstSection>div{
+  margin-right: 19px;
+}
+.orderFirstSection h5{
+  margin-right: 19px;
+  color: #636363;
+}
+.orderFirstSection h3{
+  color: #333333;
+}
+.orderShipTo>h3{
+  color: #007bff;
+  cursor: pointer;
+}
+.orderStateH2{
+  color: #717e8a;
+  text-align: center;
+  margin-bottom: 7px;
+}
+.orderSecondSection{
+  border-bottom: 1px solid #ccc;
+}
+.orderProducts{
+  padding-left: 16px;
+}
+.orderProduct{
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.orderProductImgAndInfos{
+  display: flex;
+}
+.orderProductImg{
+  width: 110px;
+  height: 150px;
+  margin-right: 15px;
+}
+.orderProductInfos>*{
+  margin-bottom: 5px;
+}
+.orderProductInfos>h3{
+  color: #007bff;
+}
+.orderProductInfos>h4{
+  color: black;
+  max-width: 80%;
+}
+.orderBuyAgain{
+  color: black;
+  background-color: orange;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #c5c5c5;
+  cursor: pointer;
+  margin-right: 5px;
+}
+.orderViewItem{
+  color: black;
+  background-color:transparent ;
+  padding: 10px;
+  border-radius: 10px;
+  border: 2px solid #c5c5c5;
+  cursor: pointer;
+}
+.orderProductReview{
+  padding: 7px 65px;
+  background-color: white;
+  color: black;
+  border-radius: 10px;
+  border:  2px solid #c5c5c5;
+  cursor: pointer;
+  height: fit-content;
+}
+.orderThirdSection{
+  width: 100%;
+}
+.orderThirdSection>h3{
+  color: #007bff;
+  cursor: pointer;
+  width: fit-content;
+}
+@media (max-width: 991px) {
+  .orderProduct{
+    flex-direction: column;
+    align-items: center;
+  }
+  .orderProductImgAndInfos{
+    flex-direction: column;
+    align-items: center;
+  }
+  .orderProductInfos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .orderProductReview{
+    width: 50%;
+    text-align: center;
+  }
+  .orderProductInfosButtons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .orderProductReview{
+    width: 100px;
+    padding:0px
+  }
+  .orderBuyAgain{
+    margin-bottom: 5px;
+  }
+
+}
+@media (max-width: 280px) {
+  /* you must deal with stepper because it make horezon scroll*/
+  .orderShipTo{
+    display: none;
+  }
+  .orderStateH2{
+    display: none;
+  }
+}
+
+@media (max-width: 195px) {
+  .orderFirstSection{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .orderFirstSection>div{
+    margin-right: 0px;
+    margin-bottom:7px;
+  }
+  .orderPlaced>h5,
+  .orderPlaced>h5{
+    text-align: center;
+  }
+}

@@ -1,0 +1,86 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+*::after,*::after{
+  margin: 0px;
+  padding: 0px;
+}
+/* ordersBuyAgain */
+.ordersBuyAgain{
+  margin-bottom: 10px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.buyAgainProduct {
+  padding: 10px;
+  width: 20%;
+  min-height: 75vh;
+  border: 1px solid #c5c5c5;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  position: relative; /* Add this line */
+}
+
+.buyAgainProduct > .buyAgainProductUpper {
+  width: 100%;
+}
+
+.buyAgainProductUpper > * {
+  margin-bottom: 15px;
+}
+
+.buyAgainProductUpper > img {
+  width: 100%;
+  height: 200px;
+}
+
+.buyAgainProductUpper > h3 {
+  font-weight: bold;
+}
+
+.buyAgainProductUpper > h2 {
+  font-weight: bold;
+}
+
+.buyAgainProductUpper > h4 {
+  font-weight: normal;
+}
+
+.buyAgainProduct > button {
+  color: black;
+  background-color: orange;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #c5c5c5;
+  cursor: pointer;
+  position: absolute; /* Add this line */
+  bottom: 10px; /* Add this line */
+  left: 50%; /* Add this line */
+  transform: translateX(-50%); /* Add this line */
+}
+
+@media (max-width: 991px) {
+  
+  .buyAgainProduct{
+    width: 33.2%;
+  }
+
+}
+@media (max-width: 550px) {
+  
+  .buyAgainProduct{
+    width: 50%;
+  }
+
+}
+@media (max-width: 350px) {
+  
+  .buyAgainProduct{
+    width: 100%;
+  }
+
+}
