@@ -5,7 +5,9 @@ Features
 User Authentication:
 
 User registration and login functionalities.
-Secure authentication using JWT (JSON Web Token).
+registration with email and password and verify email - login - reset password with Email verification 
+and update (email-name-password) / with firebase - Authentication
+
 Profile management, including the ability to update personal information and view order history.
 Product Catalog:
 
